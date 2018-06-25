@@ -9,8 +9,9 @@
  var keysPressed = [];
 
 window.addEventListener( 'keydown', ( e ) => {
-  console.log(e.key);
+  console.log( e.key );
   keysPressed.push( e.key );
-  console.log(keysPressed);
-  
+  console.log( keysPressed );
+  keysPressed.splice( ( -konami.length -1 ) , ( keysPressed.length - konami.length ) );
+  console.log( keysPressed );
 })
