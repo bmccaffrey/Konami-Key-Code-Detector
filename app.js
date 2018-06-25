@@ -17,5 +17,6 @@ window.addEventListener( 'keydown', ( e ) => {
 
   if ( keysPressed.join( '' ) === konami.join( '' )) {
     console.log( 'jackpot' );
+    cornify_add();
   }
 });
