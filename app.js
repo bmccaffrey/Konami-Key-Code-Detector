@@ -7,3 +7,7 @@
  var konami = [ 'ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a' ];
 
  var keysPressed = [];
+
+window.addEventListener( 'keydown', ( e ) => {
+  console.log(e.key);
+})
