@@ -10,4 +10,7 @@
 
 window.addEventListener( 'keydown', ( e ) => {
   console.log(e.key);
+  keysPressed.push( e.key );
+  console.log(keysPressed);
+  
 })
