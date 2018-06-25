@@ -9,14 +9,10 @@ var konami = [ 'ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'Arr
 var keysPressed = [];
 
 window.addEventListener( 'keydown', ( e ) => {
-  console.log( e.key );
   keysPressed.push( e.key );
-  console.log( keysPressed );
   keysPressed.splice( ( -konami.length -1 ) , ( keysPressed.length - konami.length ) );
-  console.log( keysPressed );
 
   if ( keysPressed.join( '' ) === konami.join( '' )) {
-    console.log( 'jackpot' );
     cornify_add();
   }
 });
